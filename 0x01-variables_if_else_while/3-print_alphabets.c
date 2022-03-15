@@ -1,19 +1,31 @@
 #include <stdio.h>
 /**
- * main - main function
- * Return: always 0.
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Sucess/correct)
+ */
 int main(void)
+
 {
-	char low, upper;
+char lower_case;
+char upper_case;
 
-	for (low = 'a'; low <= 'z'; low++)
-	putchar(low);
+for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
+{
+putchar(lower_case);
+}
 
-	for (upper = 'A'; upper <= 'Z'; upper++)
-	putchar(upper);
 
-	putchar ('\n');
+for (upper_case = 'A'; upper_case <= 'Z'; upper_case++)
+{
+putchar(upper_case);
+}
 
-	return (0);
+
+
+
+putchar ('\n');
+
+return (0);
+
 }

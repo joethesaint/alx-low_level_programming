@@ -1,19 +1,30 @@
 #include <stdio.h>
 /**
- * main - prints all possible combinations of single-digit numbers
- * Return: always 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success/correct)
+ */
 int main(void)
+
 {
-int x;
-for (x = 0; x <= 9; x++)
+int number;
+
+
+for (number = 48; number <= 57; number++)
 {
-putchar((x % 10) + '0');
-if (x == 9)
-continue;
-putchar(',');
-putchar(' ');
+putchar(number);
+
+if (number == 57)
+{
+break;
 }
+
+putchar(',');
+putchar (' ');
+}
+
 putchar('\n');
+
 return (0);
+
 }

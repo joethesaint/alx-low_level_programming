@@ -1,18 +1,25 @@
 #include <stdio.h>
 /**
- * main - main function
- * Return: always 0
-*/
+ * main - entry point
+ *
+ * Return: Always 0 (success/correct)
+ */
 int main(void)
+
 {
-	char num, alp;
+char base_16;
 
-	for (num = '0'; num <= '9'; num++)
-		putchar(num);
-	for (alp = 'a'; alp <= 'f'; alp++)
-		putchar(alp);
+for (base_16 = 48; base_16 <= 57; base_16++)
+{putchar(base_16);
+}
 
-	putchar('\n');
+for (base_16 = 97 ; base_16 <= 102; base_16++)
+{
+putchar(base_16);
+}
 
-	return (0);
+putchar ('\n');
+
+return (0);
+
 }

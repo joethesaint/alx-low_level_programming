@@ -1,16 +1,21 @@
 #include <stdio.h>
 /**
- * main - print the number
- * Return: always 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (success/corect)
+ */
 int main(void)
+
 {
-	int numbers;
+int i;
 
-	for (numbers = '0' ; numbers <= '9'; numbers++)
-		putchar(numbers);
+for (i = 48 ; i <= 57; i++)
+{
+putchar (i);
+}
 
-	putchar ('\n');
+putchar ('\n');
 
-	return (0);
+return (0);
+
 }

@@ -1,16 +1,21 @@
 #include <stdio.h>
 /**
- * main - main function
- * Return: always 0.
-*/
+ * main -Entry point
+ *
+ * Return: Always 0 (Success/correct)
+ */
 int main(void)
+
 {
-	char low;
+char alphabet;
 
-	for (low = 'a'; low <= 'z'; low++)
-	putchar(low);
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+putchar(alphabet);
+}
 
-	putchar ('\n');
+putchar('\n');
 
-	return (0);
+return (0);
+
 }

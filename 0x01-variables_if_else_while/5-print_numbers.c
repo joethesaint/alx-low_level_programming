@@ -1,16 +1,21 @@
 #include <stdio.h>
 /**
- * main - print the number
- * Return: always 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (success/correct)
+ */
 int main(void)
+
 {
-	int numbers;
+int i;
 
-	for (numbers = 0 ; numbers <= 9; numbers++)
-		printf("%d", numbers);
+for (i = 0 ; i < 10; i++)
+{
+printf("%i", i);
+}
 
-	printf("\n");
+printf("\n");
 
-	return (0);
+return (0);
+
 }
