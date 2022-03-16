@@ -2,7 +2,7 @@
 
 /**
  * main - entry point
- * 
+ *
  * Return: nothing, return void
  */
 
@@ -20,6 +20,7 @@ _putchar('\n');
 
 return (0);
 }
+<<<<<<< HEAD
 
 #include "main.h"
 
@@ -45,3 +46,5 @@ _putchar('\n');
 return (0);
 }
 
+=======
+>>>>>>> 2bae407f21d34314dcc8d66ae707fceb702b2ed8
