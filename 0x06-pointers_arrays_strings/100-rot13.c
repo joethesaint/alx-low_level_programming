@@ -1,23 +1,28 @@
 #include "main.h"
 /**
-* *rot13 - is a simple letter substitution cipher that replaces a letter
-* @a: variable name
-* Return: b value
-*/
-char *rot13(char *a)
-{
-	char *b = a;
-	char *abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'\0'";
-	char *code = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm'\0'";
-	int count;
+ * rot13 - encodes a string using rot13
+ * @s: input string.
+ * Return: the pointer to dest.
+ */
 
-	for (count = 0; count <= 52; count++)
+char *rot13(char *s)
+{
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+	while (*(s + count) != '\0')
 	{
-		if (*a == abc[count])
+		for (i = 0; i < 52; i++)
 		{
-			*a = code[count];
+			if (*(s + count) == alphabet[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
 		}
-	a++;
+		count++;
 	}
-	return (b);
+
+	return (s);
 }
