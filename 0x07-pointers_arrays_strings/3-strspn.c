@@ -1,44 +1,41 @@
 #include "main.h"
 
 /**
- * _strspn - Locates a character in a string
- * @s: This is the main C string to be scanned.
- * @accept: This is the string containing the list of characters to match in s
- * Return: return count
- **/
+ * _strspn - gets the length of a prefix substring.
+ * @s: the string to be searched.
+ * @accept: the prefix to be measured.
+ *
+ * Return: the number of bytes in s which
+ * 	   consists only of bytes from accept.
+ * 
+ * PSEUDOCODE
+ * Loop through s and comparw s[i] to values in accept
+ * 	increase bytes counter when values in accept can be found
+ * 	in *s
+ * end loop and return bytes when accept is exhausted.
+ */
 
 unsigned int _strspn(char *s, char *accept)
-
 {
-	int i, j;
-	int count = 0;
-	char *str1, *str2;
+	unsigned int bytes = 0;
+	int index;
 
-	str1 = s;
-	str2 = accept;
-
-	i = 0;
-	while (str1[i] != '\0') /*Declaring WHILE *s */
+	while (*s)
 	{
-		j = 0;
-		while (str2[j] != '\0') /*Declaring WHILE *accept*/
+		for (index = 0; accept[index]; index++)
 		{
-			if (str2[j] == str1[i]) /*Evaluate condition*/
+			if (*s == accept[index])
 			{
-				count++; /*count number*/
+				bytes++;
 				break;
 			}
-
-			j++;    /*add j+1*/
+			else if (accept[index + 1] == '\0')
+				return (bytes);
 		}
 
-		if (s[i] != accept[j]) /*If aren't equals*/
-		{
-			break;
-		}
-
-		i++; /*add x+1*/
+		s++;
 	}
-
-	return (count); /*return the value of count*/
+	
+	return (bytes);
 }
+
