@@ -1,5 +1,4 @@
 # Recursion
-## About
 > Projects-based tasks about recursion
 ## Technologies
 * Tested on WSL Ubuntu 20.04 LTS
