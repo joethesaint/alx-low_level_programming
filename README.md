@@ -20,3 +20,4 @@ Links to the files used for this project:
 | [0x06-pointers_arrays_strings](./0x06-pointers_arrays_strings) | It aims to learn about pointers and arrays in **C language** |
 | [0x07-pointers_arrays_strings](./0x07-pointers_arrays_strings) | It aims to learn about pointers and arrays in **C language** |
 | [0x08-recursion](./0x08-recursion) | It aims to learn about recursion and how to implement it in **C language** |
+| [0x09-static_libraries](./0x09-static_libraries) | It aims to learn about arguments in **C language** |
