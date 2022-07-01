@@ -31,9 +31,9 @@ All of the following files are programs written in C:
     of `98`.
 
 * **1. string_nconcat**
- * [1-string_nconcat.c](./1-string_nconcat.c): C function that returns a pointer to a        newly-allocated space in memory containing the concatenation of two strings.
-   * The returned pointer contains `s1` followed by the first `n` bytes
+  * [1-string_nconcat.c](./1-string_nconcat.c): C function that returns a pointer to a        newly-allocated space in memory containing the concatenation of two strings.
+    * The returned pointer contains `s1` followed by the first `n` bytes
    of `s2`, null-terminated.
-   * If `n` is greater than or equal to the length of `s2`, the entire string `s2` is used.
-   * If `NULL` is passed, the function treats the parameter as an empty string.
-   * If the function fails - returns `NULL`.
+    * If `n` is greater than or equal to the length of `s2`, the entire string `s2` is used.
+    * If `NULL` is passed, the function treats the parameter as an empty string.
+    * If the function fails - returns `NULL`.
